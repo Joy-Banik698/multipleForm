@@ -8,6 +8,7 @@ let form2 = document.querySelector('.form2')
 let form3 = document.querySelector('.form3')
 let form4 = document.querySelector('.form4')
 let inpu = document.querySelector('.inpu')
+let inpumiddle = document.querySelector('.middle')
 let inpu2 = document.querySelector('.inpu2')
 let inpu3 = document.querySelector('.inpu3')
 let inpu4 = document.querySelector('.inpu4')
@@ -23,6 +24,13 @@ inpu.addEventListener('keyup', () => {
         inpu.setAttribute('style', 'border-bottom:2px solid red')
     } else {
         inpu.setAttribute('style', 'border-bottom:2px solid green')
+    }
+})
+inpumiddle.addEventListener('keyup', () => {
+    if (inpumiddle.value == "") {
+        inpumiddle.setAttribute('style', 'border-bottom:1px solid black')
+    } else {
+        inpumiddle.setAttribute('style', 'border-bottom:2px solid green')
     }
 })
 inpu2.addEventListener('keyup', () => {
